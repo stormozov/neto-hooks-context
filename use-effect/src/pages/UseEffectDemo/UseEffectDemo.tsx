@@ -6,6 +6,9 @@ import { useState } from "react";
 import { DEFAULT_URL } from "./configurations";
 import style from "./UseEffectDemo.module.scss";
 
+/**
+ * Компонент, отображающий страницу UseEffectDemo
+ */
 export function UseEffectDemoPage() {
   const mainSelector = "use-effect-demo";
 

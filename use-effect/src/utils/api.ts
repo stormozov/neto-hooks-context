@@ -1,3 +1,9 @@
+/**
+ * Универсальная утилита для получения данных с сервера
+ * 
+ * @description
+ * Использует fetch API.
+ */
 export const fetchData = async <T>(
   url: string,
   options?: RequestInit

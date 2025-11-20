@@ -6,10 +6,22 @@ import {
 import { Loader } from "@components/ui";
 import useFetch from "@hooks/useFetch";
 
+/**
+ * Интерфейс, описывающий свойства компонента UserListWithFetch
+ */
 export interface UserListWithFetchProps extends Omit<IUserListProps, "users"> {
 	url: string;
 }
 
+/**
+ * Компонент-контейнер для компонента UserList
+ * 
+ * @description
+ * Компонент получает данные о пользователях с помощью кастомного хука useFetch.
+ * Во время получения отображает компонент Loader. При успешном получении данных
+ * отображает компонент UserList. В случае возникновения ошибки отображает
+ * сообщение об ошибке.
+ */
 export function UserListWithFetch({
 	url,
 	activeUser,

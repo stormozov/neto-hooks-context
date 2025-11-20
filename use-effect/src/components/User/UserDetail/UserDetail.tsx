@@ -1,10 +1,16 @@
 import type { UserDetailsData } from "../types";
 import style from "./UserDetail.module.scss";
 
+/**
+ * Интерфейс, описывающий свойства компонента UserDetail
+ */
 interface UserDetailProps {
 	userData: UserDetailsData;
 }
 
+/**
+ * Компонент, отображающий детали о пользователе
+ */
 export function UserDetail({ userData }: UserDetailProps) {
 	const mainSelector = "user-detail";
 

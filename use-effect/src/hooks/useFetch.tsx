@@ -1,12 +1,19 @@
 import { fetchData } from "@utils";
 import { useEffect, useMemo, useState } from "react";
 
+/**
+ * Интерфейс, описывающий свойства компонента useFetch
+ */
 export interface UseFetchResult<T> {
 	data: T | null;
 	loading: boolean;
 	error: Error | null;
 }
 
+/**
+ * Кастомный хук для получения данных с сервера и приведения к формату:
+ * `{ data, loading, error }`
+ */
 export default function useFetch<T = unknown>(
 	url: string,
 	options?: RequestInit,

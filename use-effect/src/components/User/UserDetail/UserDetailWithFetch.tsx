@@ -4,6 +4,9 @@ import useFetch from "@hooks/useFetch";
 import React, { useMemo } from "react";
 import { UserDetail } from "./UserDetail";
 
+/**
+ * Интерфейс, описывающий свойства компонента UserDetailWithFetch
+ */
 export interface UserDetailWithFetchProps {
 	url: string;
 	userId: number;
@@ -25,6 +28,15 @@ const UserDetailWithFetchComponent = ({
 
 UserDetailWithFetchComponent.displayName = "UserDetailWithFetch";
 
+/**
+ * Компонент-контейнер для компонента UserDetail
+ *
+ * @description
+ * Компонент получает данные о пользователе с помощью кастомного хука useFetch.
+ * Во время получения отображает компонент Loader. При успешном получении данных
+ * отображает компонент UserDetail. В случае возникновения ошибки отображает
+ * сообщение об ошибке.
+ */
 export const UserDetailWithFetch = React.memo(
 	UserDetailWithFetchComponent,
 	(prevProps, nextProps) =>

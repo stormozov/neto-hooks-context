@@ -2,12 +2,18 @@ import classnames from "classnames";
 import type { IUseEffectUserListItem } from "../types";
 import userList from "./UserList.module.scss";
 
+/**
+ * Интерфейс, описывающий свойства компонента UserList
+ */
 export interface IUserListProps {
 	users: IUseEffectUserListItem[];
   activeUser: number | null;
 	onClick: (userId: number) => void;
 }
 
+/**
+ * Компонент, отображающий список пользователей
+ */
 export function UserList({ users, activeUser, onClick }: IUserListProps) {
   const mainSelector = "user-list";
   
