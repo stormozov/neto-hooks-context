@@ -1,7 +1,7 @@
 {
     "id": 1,
     "name": "Dorthy McClure Sr.",
-    "avatar": "https://i.pravatar.cc/300",
+    "avatar": "./avatars/1.jpg",
     "details": {
         "city": "Sipesfort",
         "company": "Hilll LLC",
