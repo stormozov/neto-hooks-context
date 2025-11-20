@@ -1,0 +1,40 @@
+.user-list {
+  --border-color: #e6e0e0;
+  --border-radius: 4px;
+
+  &__item {
+    width: 100%;
+  }
+
+  &__item:not(:last-child) &__btn {
+    border-bottom: none;
+  }
+
+  &__item:first-child &__btn {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  &__item:last-child &__btn {
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+  }
+
+  &__btn {
+    padding: 0.8rem 1rem;
+
+    width: 100%;
+    border: 1px solid var(--border-color);
+    
+    font-weight: 400;
+    text-align: left;
+
+    &--active {
+      background-color: #4689ec;
+      border-color: #4689ec;
+      color: #ffffff;
+    }
+
+    &:where(:not(:disabled, &--active)):hover {
+      background-color: #f5f5f5;
+    }
+  }
+}

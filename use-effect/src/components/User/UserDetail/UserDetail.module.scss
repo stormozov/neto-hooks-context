@@ -1,0 +1,22 @@
+.user-detail {
+  --border-color: #e6e0e0;
+  --border-radius: 4px;
+
+  &__avatar {
+    display: block;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  &__details {
+    border: 1px solid var(--border-color);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+    > * {
+      padding: 0.6rem 1rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid var(--border-color);
+      }
+    }
+  }
+}

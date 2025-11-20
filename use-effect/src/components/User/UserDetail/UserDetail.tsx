@@ -1,0 +1,31 @@
+import type { UserDetailsData } from "../types";
+import style from "./UserDetail.module.scss";
+
+interface UserDetailProps {
+	userData: UserDetailsData;
+}
+
+export function UserDetail({ userData }: UserDetailProps) {
+	const mainSelector = "user-detail";
+
+	const { avatar, name, details } = userData;
+	const { city, company, position } = details;
+
+	return (
+		<div className={style[`${mainSelector}`]}>
+			<img
+				src={avatar}
+				alt={name}
+				className={style[`${mainSelector}__avatar`]}
+			/>
+			<div className={style[`${mainSelector}__details`]}>
+				<h3 className={style[`${mainSelector}__name`]}>{name}</h3>
+				<p className={style[`${mainSelector}__city`]}>City: {city}</p>
+				<p className={style[`${mainSelector}__company`]}>Company: {company}</p>
+				<p className={style[`${mainSelector}__position`]}>
+					Position: {position}
+				</p>
+			</div>
+		</div>
+	);
+}
