@@ -17,7 +17,9 @@ export function UseEffectDemoPage() {
 			<div className={style[`${mainSelector}`]}>
 				<div className="container">
 					<header className={style[`${mainSelector}__header`]}>
-						<h1 className={style[`${mainSelector}__title`]}>UseEffectDemo</h1>
+						<h1 className={style[`${mainSelector}__title`]}>
+              Приложение со списком пользователей
+            </h1>
             <p className={style[`${mainSelector}__description`]}>
               Выберите пользователя из списка ниже, чтобы увидеть его детали
             </p>
