@@ -1,7 +1,7 @@
 {
     "id": 5,
     "name": "Mohamed Kertzmann",
-    "avatar": "https://i.pravatar.cc/300",
+    "avatar": "https://raw.githubusercontent.com/stormozov/neto-hooks-context/master/use-effect/data/avatars/5.jpeg",
     "details": {
         "city": "Ruthiehaven",
         "company": "Toy LLC",

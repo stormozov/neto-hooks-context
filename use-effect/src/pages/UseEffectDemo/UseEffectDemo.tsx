@@ -22,7 +22,7 @@ export function UseEffectDemoPage() {
               Выберите пользователя из списка ниже, чтобы увидеть его детали
             </p>
 					</header>
-          
+
 					<main className={style[`${mainSelector}__main`]}>
 						<UserListWithFetch
 							url={DEFAULT_URL}

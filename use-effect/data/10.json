@@ -1,7 +1,7 @@
 {
     "id": 10,
     "name": "Robbie Mayer",
-    "avatar": "https://i.pravatar.cc/300",
+    "avatar": "https://raw.githubusercontent.com/stormozov/neto-hooks-context/master/use-effect/data/avatars/10.jpeg",
     "details": {
         "city": "Kassulkeport",
         "company": "Jacobson - Davis",

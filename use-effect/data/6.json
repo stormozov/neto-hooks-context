@@ -1,7 +1,7 @@
 {
     "id": 6,
     "name": "Vladimir Tromp",
-    "avatar": "https://i.pravatar.cc/300",
+    "avatar": "https://raw.githubusercontent.com/stormozov/neto-hooks-context/master/use-effect/data/avatars/6.jpeg",
     "details": {
         "city": "Feestville",
         "company": "Kuhn - Lueilwitz",

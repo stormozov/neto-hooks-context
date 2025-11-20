@@ -1,7 +1,7 @@
 {
     "id": 1,
     "name": "Dorthy McClure Sr.",
-    "avatar": "./avatars/1.jpg",
+    "avatar": "https://raw.githubusercontent.com/stormozov/neto-hooks-context/master/use-effect/data/avatars/1.jpeg",
     "details": {
         "city": "Sipesfort",
         "company": "Hilll LLC",

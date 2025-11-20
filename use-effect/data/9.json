@@ -1,7 +1,7 @@
 {
     "id": 9,
     "name": "Dr. Grady Abernathy",
-    "avatar": "https://i.pravatar.cc/300",
+    "avatar": "https://raw.githubusercontent.com/stormozov/neto-hooks-context/master/use-effect/data/avatars/9.jpeg",
     "details": {
         "city": "South Angelicaberg",
         "company": "Schneider and Sons",
